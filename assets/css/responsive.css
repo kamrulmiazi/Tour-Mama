@@ -1,0 +1,107 @@
+/* Mobile Responsive 600px  */
+
+@media screen and (max-width:600px) {
+
+    /* hero saction design */
+    .hero {
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .card-1 h1,
+    .card-1 h1 p {
+        font-size: 50px;
+    }
+
+    .card-1 p {
+        font-size: 16px;
+    }
+
+    .card-2 img {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* title design  */
+    .title h2 {
+        font-size: 35px;
+        padding: 0px 10px;
+        text-wrap: wrap;
+    }
+
+    .title p {
+        font-size: 20px;
+    }
+
+    /* sarvice design  */
+    .sarvice{
+        width: 90%;
+    }
+    .cardDatails h3{
+        font-size: 23px;
+    }
+    .cardDatails p , p{
+        font-size: 16px;
+    }
+    /* blog saction design  */
+    .frame {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .poster img{
+     max-width: 100%;
+    }
+    /* countries button design  */
+
+    .countries {
+        width: 90%;
+    }
+
+    .countries button {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    /* review section design  */
+    .review {
+        width: 90%;
+    }
+
+    .star img {
+        overflow: hidden;
+    }
+
+    /* footer design  */
+    .width {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .width p{
+        order: 2;
+    }
+}
+
+/* Leptop Responsive Design  */
+
+@media screen and (max-width:1260px) {
+    .hero, .sarvice{
+        width: 90%;
+    }
+    
+    .frame {
+        flex-direction: column;
+        align-items: start;
+        width: 90%;
+    }
+    .card-1 h1,
+    .card-1 h1 p {
+        font-size: 50px;
+    }
+    .card-1 p {
+        font-size: 16px;
+    }
+}

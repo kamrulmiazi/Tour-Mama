@@ -1,0 +1,352 @@
+*,
+*::after,
+*::before {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background: var(--body);
+     font-family: Plus Jakarta Sans;
+}
+
+:root {
+     --text: #1C1C1C;
+     --primary: #872BFF;
+     --secondary: #F411CF;
+     --gray: #A8A8A8;
+     --white: #ffffff;
+     --body: linear-gradient(#ffffff, #ebdcff);
+     --color: rgba(135, 43, 255, 0.103);
+}
+
+
+/* Main design  */
+.hero {
+     max-width: 1260px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     margin-top: 80px;
+     background: url(../images/hero-bg.png);
+     border-radius: 30px;
+     border: solid var(--color) 2px;
+     padding: 20px 30px;
+}
+
+.card-1 {
+     flex-basis: 50%;
+}
+
+.card-1 h1,
+.card-1 h1>p {
+     font-family: Plus Jakarta Sans;
+     font-size: 70px;
+     font-weight: bold;
+     color: var(--text);
+     margin-bottom: 36px;
+
+}
+
+.card-1>h1>p {
+     color: var(--secondary);
+}
+
+.card-1 p {
+     font-family: Plus Jakarta Sans;
+     font-size: 18px;
+     font-weight: medium;
+     color: var(--gray);
+     margin-bottom: 36px;
+}
+
+.button {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+}
+
+.button button {
+     padding: 16px 32px;
+     border-radius: 30px;
+     background: var(--primary);
+     color: var(--white);
+     font-family: Plus Jakarta Sans;
+     font-size: 14px;
+     font-weight: bold;
+     border: none;
+     outline: none;
+     cursor: pointer;
+}
+
+.button button:nth-child(2) {
+     background: none;
+     border: solid var(--text) 1px;
+     color: var(--text);
+}
+
+.card-2 {
+     flex-basis: 50%;
+     text-align: center;
+}
+
+.card-2 img {
+     max-width: 100%;
+}
+
+/* sarvice design  */
+
+.sarvice {
+     max-width: 1260px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     margin-top: 80px;
+     flex-direction: column;
+}
+
+.title {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 14px;
+}
+
+.title P {
+     font-size: 24px;
+     font-weight: bold;
+     color: var(--secondary);
+     text-transform: uppercase;
+     letter-spacing: 5px;
+     text-align: center;
+}
+
+.title h2 {
+     text-align: center;
+     font-size: 44px;
+     font-weight: bold;
+     color: var(--text);
+}
+
+.cards {
+     margin-top: 60px;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 70px;
+     justify-content: center;
+     align-items: center;
+}
+
+.sarvice-1 {
+     height: 450px;
+     width: 350px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 60px;
+     background: #fdffff;
+     border-radius: 30px;
+
+}
+
+.cardLogo {
+     width: 80px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 80px;
+     border-radius: 50%;
+     border: var(--primary) 5px groove;
+}
+
+.cardLogo:hover {
+     animation: roteted 5s linear infinite;
+
+}
+
+@keyframes roteted {
+     form {
+          transform: rotate(0deg);
+     }
+
+     to {
+          transform: rotate(360deg);
+     }
+}
+
+.cardDatails {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+}
+
+.cardDatails h3 {
+     font-family: Plus Jakarta Sans;
+     font-size: 28px;
+     font-weight: 600;
+     color: var(--text);
+}
+
+.cardDatails p {
+     font-family: Plus Jakarta Sans;
+     font-size: 18px;
+     font-weight: medium;
+     text-align: center;
+     color: var(--gray);
+     padding: 0px 48px;
+}
+
+/* top frame design  */
+.frame {
+     max-width: 1260px;
+     margin-top: 60px;
+     display: flex;
+     gap: 32px;
+     align-items: center;
+     justify-content: center;
+     padding: 48px;
+     background: var(--white);
+     border-radius: 30px;
+     overflow: hidden;
+}
+
+
+
+.blog h1 {
+     font-size: 32px;
+     font-weight: bold;
+     color: var(--text);
+     margin-bottom: 12px;
+}
+
+.blog img {
+     max-width: 100%;
+     margin-bottom: 12px;
+}
+
+.blog p {
+     font-size: 16px;
+     font-weight: normal;
+     color: var(--gray);
+     line-height: 24px;
+     margin-bottom: 32px;
+}
+
+button {
+     padding: 16px 32px;
+     border-radius: 30px;
+     background: var(--primary);
+     color: var(--white);
+     font-family: Plus Jakarta Sans;
+     font-size: 14px;
+     font-weight: bold;
+     border: none;
+     outline: none;
+     cursor: pointer;
+}
+
+
+/* countries desing  */
+
+.countries {
+     margin-top: 60px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 24px;
+     margin-bottom: 60px;
+}
+
+.countries button {
+     padding: 40px;
+     font-size: 32px;
+     font-weight: bold;
+     border-radius: 16px;
+     border: rgba(14, 14, 14, 0.158);
+     background: var(--white);
+     color: var(--text);
+}
+
+/* Review Design  */
+.review {
+     padding: 24px;
+     max-width: 1260px;
+     background: var(--white);
+     border-radius: 16px;
+     margin: auto;
+     margin-top: 60px;
+     overflow: hidden;
+}
+
+
+.star p {
+     font-size: 16px;
+     text-align: center;
+     color: var(--text);
+}
+
+.star img {
+     max-width: 100%;
+     opacity: 0.3;
+     transform: translateX(941px) translateY(30px);
+}
+
+.name {
+     text-align: center;
+}
+
+.name h2 {
+     font-size: 20px;
+     font-weight: 600;
+     color: var(--text);
+}
+
+.name p {
+     font-size: 16px;
+     color: var(--gray);
+}
+
+/* fotter design  */
+.fotter {
+     margin-top: 120px;
+     background: var(--white);
+     width: 100%;
+     padding: 25px 0px;
+}
+
+.width {
+     max-width: 90%;
+     height: 100%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+}
+
+.fotter p {
+     font-size: 16px;
+     color: var(--text);
+}
+
+i {
+     font-size: 30px;
+     margin: auto;
+     color: var(--primary);
+     border-radius: 50%;
+     margin-right: 32px;
+}
